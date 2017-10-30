@@ -521,6 +521,19 @@ void keyinput::key(string input) {
 			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
 			SendInput(1, key, sizeof(INPUT));
 		}
+		else if (input == "!回车")
+		{
+			INPUT key[1];
+			memset(key, 0, sizeof(key));
+			key[0].type = INPUT_KEYBOARD;
+			key[0].ki.wVk = VK_RETURN;
+			SendInput(1, key, sizeof(INPUT));
+
+			Sleep(300);
+			memset(key, 0, sizeof(key));
+			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, key, sizeof(INPUT));
+		}
 		else if (input == "!tab")
 		{
 			INPUT key[1];
