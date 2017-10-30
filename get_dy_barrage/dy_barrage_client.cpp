@@ -11,7 +11,6 @@
  *  Revision Notes :
 */
 
-
 #include "stdafx.h"
 #include "data_def.h"
 #include "dy_barrage_client.h"
@@ -21,7 +20,7 @@
 
 #ifdef _MSC_VER
 #define WINVER 0x0500
-#include <windows.h>
+#include "windows.h"
 #include <map>
 #pragma comment(lib,"User32.lib")
 #pragma comment(lib, "ws2_32.lib")
