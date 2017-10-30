@@ -1,5 +1,13 @@
-﻿  dy_barrage_client.cpp
+﻿  get_dy_barrage.cpp
+  dy_encoder.cpp
+c:\users\jason\source\repos\douyuplays\get_dy_barrage\dy_encoder.cpp(81): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1959): note: 参见“_snprintf”的声明
+c:\users\jason\source\repos\douyuplays\get_dy_barrage\dy_encoder.cpp(158): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\jason\source\repos\douyuplays\get_dy_barrage\dy_encoder.cpp(174): warning C4018: “<”: 有符号/无符号不匹配
+  dy_barrage_client.cpp
 c:\users\jason\source\repos\douyuplays\get_dy_barrage\dy_barrage_client.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\users\jason\source\repos\douyuplays\get_dy_barrage\dy_barrage_client.cpp(22): warning C4005: “WINVER”: 宏重定义
   c:\program files (x86)\windows kits\10\include\10.0.16299.0\shared\sdkddkver.h(236): note: 参见“WINVER”的前一个定义
+  data_def.cpp
+  正在生成代码...
   dy_barrage.vcxproj -> C:\Users\Jason\source\repos\douyuplays\Debug\get_dy_barrage.exe

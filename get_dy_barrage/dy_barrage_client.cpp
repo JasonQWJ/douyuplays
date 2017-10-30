@@ -54,623 +54,893 @@ void keyinput::key(string input) {
 		
 		if (input == "!1")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 49;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 49;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!2")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 50;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 50;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!3")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 51;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 51;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!4")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 52;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 52;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!5")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 53;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 53;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!6")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 54;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 54;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!7")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 55;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 55;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!8")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 56;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 56;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!9")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 57;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 57;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!0")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 48;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 48;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!a")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 65;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 65;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 
 		}
 		else if (input == "!b")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 66;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 66;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!c")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 67;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 67;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!d")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 68;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 68;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!e")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 69;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 69;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!f")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 70;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 70;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!g")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 71;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 71;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!h")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 72;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 72;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!i")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 73;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 73;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!j")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 74;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 74;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!k")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 75;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 75;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!l")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 76;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 76;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!m")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 77;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 77;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!n")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 78;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 78;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!o")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 79;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 79;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!p")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 80;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 80;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!q")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 81;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 81;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!r")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 82;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+			    
+			key.type = INPUT_KEYBOARD;
+			key.ki.wVk = 82;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			    
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!s")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 83;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 83;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!t")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 84;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 84;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!u")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 85;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 85;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!v")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 86;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 86;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!w")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 87;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 87;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!x")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 88;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 88;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!y")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 89;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 89;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!z")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = 90;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = 90;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!回车")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_RETURN;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_RETURN;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!tab")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_TAB;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_TAB;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == "!esc")
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_ESCAPE;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_ESCAPE;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!jump"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_SPACE;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_SPACE;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!f1"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F1;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F1;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!f2"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F2;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F2;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!f3"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F3;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F3;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!f4"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F4;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F4;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
-		else if (input == string("!f6"))
+		else if (input == string("!f5"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F6;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F5;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!f7"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F7;
-			SendInput(1, key, sizeof(INPUT));
+
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F7;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		else if (input == string("!f8"))
 		{
-			INPUT key[1];
-			memset(key, 0, sizeof(key));
-			key[0].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = VK_F8;
-			SendInput(1, key, sizeof(INPUT));
+			INPUT key;
+
+			// Set up a generic keyboard event.
+			key.type = INPUT_KEYBOARD;
+			key.ki.wScan = 0; // hardware scan code for key
+			key.ki.time = 0;
+			key.ki.dwExtraInfo = 0;
+
+			key.ki.wVk = VK_F8;
+			key.ki.dwFlags = 0;
+			SendInput(1, &key, sizeof(INPUT));
 
 			Sleep(300);
-			memset(key, 0, sizeof(key));
-			key[0].ki.dwFlags = KEYEVENTF_KEYUP;
-			SendInput(1, key, sizeof(INPUT));
+			key.ki.dwFlags = KEYEVENTF_KEYUP;
+			SendInput(1, &key, sizeof(INPUT));
 		}
 		/*else if (input == "!Cc")
 		{
 			INPUT key[4];
-			memset(key, 0, sizeof(key));
-			key[0].type = key[1].type = key[2].type = key[3].type = INPUT_KEYBOARD;
-			key[0].ki.wVk = key[2].ki.wVk = VK_CONTROL;
-			key[1].ki.wVk = key[3].ki.wVk = 0x43;
+			    
+			key.type = key.type = key[2].type = key[3].type = INPUT_KEYBOARD;
+			key.ki.wVk = key[2].ki.wVk = VK_CONTROL;
+			key.ki.wVk = key[3].ki.wVk = 0x43;
 			key[2].ki.dwFlags = key[3].ki.dwFlags = KEYEVENTF_KEYUP;
 			SendInput(4, key, sizeof(INPUT));
 		}*/
